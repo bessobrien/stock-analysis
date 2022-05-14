@@ -8,26 +8,35 @@ However, now Steve wants to expand the abilities of the analysis to look through
 
 ## Results
 
-We started with the original All Stocks Analysis code and ran the code for both the year 2017 and 2018. The timed results of the code-run for the original code was:
+We started with the original All Stocks Analysis code and ran the code for both the year 2017 and 2018. The timed results of the code-run for the original code for 2017 and 2018 was:
 
-2017: LINK
-2018: LINK
+![Original_Time_2017](https://github.com/bessobrien/stock-analysis/blob/master/Resources/Original_Time_2017.png)
+
+![Original_Time_2018](https://github.com/bessobrien/stock-analysis/blob/master/Resources/Original_Time_2018.png)
 
 One note is that in the original code, we used nested For loops to run through each row of the data 12 times. Here is a snapshot of the original nexted loops:
-LINK
+
+![Original_Script_Nested](https://github.com/bessobrien/stock-analysis/blob/master/Resources/Original_Script_Nested.png)
 
 ### Refactoring the Code
 
 We really wanted to see if we could refactor the code to run faster - in the anticipation that we might use this code for a much larger dataset in the future. While refactoring, we found that the nested loops were a big part of the time expended to run the code. So instead, we split up the loops: one loop to set all ticker indexes and volumes to 0, and then the main code which then only ran through the rows once (instead of 12 times!).
 
-Here is a snapshot of the nested loops split out in the refactored code: LINK
+Here is a snapshot of the nested loops split out in the refactored code:
 
-We found that by splitting up the loops, we were able to decrease the code run time significantly. After our refectored script, our code run times were:
+![Refactored_Script_Loops](https://github.com/bessobrien/stock-analysis/blob/master/Resources/Refactored_Script_Loops.png) 
 
-2017: LINK
-2018: LINK
+We found that by splitting up the loops, we were able to decrease the code run time significantly. After our refectored script, our code run times for 2017 and 2018 were:
 
-Our analysis results were the same for both the original code and the refactored code: LINKS
+![VBA_Challenge_2017](https://github.com/bessobrien/stock-analysis/blob/master/Resources/VBA_Challenge_2017.png)
+
+![VBA_Challenge_2018](https://github.com/bessobrien/stock-analysis/blob/master/Resources/VBA_Challenge_2018.png)
+
+Our analysis results were the same for both the original code and the refactored code: 
+
+![Analysis_Result_2017](https://github.com/bessobrien/stock-analysis/blob/master/Resources/Analysis_Result_2017.png) 
+
+![Analysis_Result_2018](https://github.com/bessobrien/stock-analysis/blob/master/Resources/Analysis_Result_2018.png)
 
 ## Summary
 
